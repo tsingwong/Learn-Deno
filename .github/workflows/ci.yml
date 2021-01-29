@@ -20,8 +20,8 @@ jobs:
       - name: Log versions
         run: |
           deno --version
-      # - name: Run deno fmt
-      #   run: deno fmt --check
+      - name: Run deno fmt
+        run: deno fmt --check --ignore=./raw,./archives,README.md
 
       - name: Run deno lint
         run: deno lint --unstable
