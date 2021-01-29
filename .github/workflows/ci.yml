@@ -19,7 +19,7 @@ jobs:
 
       - name: Log versions
         run: |
-          deno --versions
+          deno --version
 
       - name: Run deno fmt
         run: deno fmt --check
