@@ -37,7 +37,7 @@ if (await exists(fullPath)) {
 }
 
 const questionsAll = mergeQuestions(questionsAlreadyDownload, questions);
-await Deno.writeTextFile(fullPath, JSON.stringify(questionsAll));
+await Deno.writeTextFile(fullPath, JSON.stringify(questionsAll, null, 2));
 
 const readme = await createReadme(questionsAll);
 await Deno.writeTextFile("./README.md", readme);
