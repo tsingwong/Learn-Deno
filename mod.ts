@@ -19,7 +19,7 @@ const result: HotList = await response.json();
 
 const questions: Array<Question> = result.data.map((x) => ({
   title: x.target.title,
-  url: `https://www.zhihu.com/questions/${x.target.id}`,
+  url: `https://www.zhihu.com/question/${x.target.id}`,
   excerpt: x.target.excerpt,
   created: format(new Date(x.target.created * 1000), "yyyy-MM-dd HH:MM"),
   answerCount: x.target.answer_count,
