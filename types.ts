@@ -3,7 +3,7 @@
  * @Author: Tsingwong
  * @Date: 2021-01-28 15:07:25
  * @LastEditors: Tsingwong
- * @LastEditTime: 2021-01-28 17:43:02
+ * @LastEditTime: 2021-02-01 16:47:58
  */
 export type Item = {
   target: {
@@ -11,8 +11,8 @@ export type Item = {
     id: number;
     excerpt: string;
     created: number;
-    answer_count: number;
-    follower_count: number;
+    "answer_count": number;
+    "follower_count": number;
   };
 };
 
